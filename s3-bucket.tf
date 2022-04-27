@@ -1,5 +1,11 @@
-module "s3-bucket" {
-  source  = "stick152/terraform-aws-s3-bucket"
-  version = "3.1.1"
-  # insert required variables here
+module "s3_bucket" {
+  source = "terraform-aws-modules/s3-bucket/aws"
+
+  bucket = "my-s3-bucket"
+  acl    = "private"
+
+  versioning = {
+    enabled = true
+  }
+
 }
