@@ -1,5 +1,5 @@
 module "s3-bucket" {
-  source  = "app.terraform.io/sedwards/s3-bucket/aws"
+  source  = "https://github.com/stick152/terraform-aws-s3-bucket"
   version = "3.1.1"
   # insert required variables here
 }
